@@ -1,6 +1,6 @@
 <h2> Airbnb Clone </h2>
 Live: https://airbnb-bendiz.netlify.app/
-- This project was made to get more practice with passing information through components in React
+<br/>- This project was made to get more practice with passing information through components in React
 
 
 <h1 align="center">Hi 👋, I'm Benedicte</h1>
