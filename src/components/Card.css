@@ -62,3 +62,39 @@ figure {
         align-items: center;
     }
 }
+
+@media screen and (max-width: 1285px) {
+    .card-components {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .Card .CardBody figure > img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-components {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .Card .CardBody figure > img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-components {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .Card .CardBody figure > img {
+        max-width: 300px;
+    }
+}
