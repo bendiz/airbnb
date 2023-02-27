@@ -1,0 +1,4 @@
+.card-components {
+    display: flex;
+    justify-content: space-evenly;
+}

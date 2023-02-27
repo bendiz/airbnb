@@ -1,11 +1,11 @@
 import './Card.css'
-export default function Card() {
+export default function Card(props) {
     return (
         <section className="Card">
             <div className="CardBody">
                 <figure>
                     <img
-                        src="src/img/katie-zaferes.png"
+                        src={props.image}
                         alt="An image of Katie Zaferes in her swimsuit with googles and a cap"
                     />
                     <span className="availability">SOLD OUT</span>
@@ -18,14 +18,13 @@ export default function Card() {
                             className="star-icon"
                         />
                         <p className="rating-text">
-                            5.0 <span className="grey">(6) • USA</span>
+                            {props.rating.toFixed(1)}
+                            <span className="grey"> (6) • USA</span>
                         </p>
                     </div>
-                    <p className="description">
-                        Life lessons with Katie Zaferes
-                    </p>
+                    <p className="description">{props.description}</p>
                     <p>
-                        <strong>From $136</strong> / person
+                        <strong>From ${props.price}</strong> / person
                     </p>
                 </div>
             </div>

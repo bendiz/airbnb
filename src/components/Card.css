@@ -7,6 +7,9 @@ figure {
 }
 
 .Card .CardBody figure > img {
+    object-fit: cover;
+    height: 300px;
+    min-width: 176px;
     border-radius: 9px;
 }
 
