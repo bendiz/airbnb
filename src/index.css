@@ -9,3 +9,13 @@ html {
 body {
     margin: 0;
 }
+
+section {
+    margin-left: 3.6rem;
+}
+
+@media screen and (max-width: 550px) {
+    section {
+        margin-left: 0;
+    }
+}
