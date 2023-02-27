@@ -1,4 +1,5 @@
 import './Card.css'
+import starIcon from '../img/star.png'
 export default function Card(props) {
     return (
         <section className="Card">
@@ -13,7 +14,7 @@ export default function Card(props) {
                 <div className="information">
                     <div className="rating">
                         <img
-                            src="src/img/star.png"
+                            src={starIcon}
                             alt="A star icon"
                             className="star-icon"
                         />
