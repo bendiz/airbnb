@@ -42,3 +42,9 @@
         margin-left: 0;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .Hero .main-image {
+        display: none;
+    }
+}
