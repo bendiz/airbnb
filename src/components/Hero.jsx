@@ -1,10 +1,12 @@
 import './Hero.css'
+import header from '../img/photo-grid.png'
+
 export default function Hero() {
     return (
         <section className="Hero">
             <img
                 className="main-image"
-                src="src/img/photo-grid.png"
+                src={header}
                 alt="Several tiles of images of cultural experiences"
             />
             <div className="description">
