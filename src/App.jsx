@@ -21,9 +21,6 @@ const createCards = () => {
     /**
      * Creates cards displaying different information
      * loops over the prop items in an object
-     *
-     * @param {File} component
-     * @param {String} filename
      */
 
     const cards = array.map((n) => (
