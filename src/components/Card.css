@@ -65,7 +65,8 @@ figure {
 
 @media screen and (max-width: 1285px) {
     .card-components {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         gap: 2rem;
     }
