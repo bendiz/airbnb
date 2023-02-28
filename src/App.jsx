@@ -6,6 +6,7 @@ import swimmer from './img/katie.jpg'
 import weddingPhoto from './img/pexels-rocsana-nicoleta-gurza-948185.jpg'
 import biker from './img/pexels-carissa-rogers-1504207.jpg'
 import studioPhoto from './img/pexels-cottonbro-studio-4629627.jpg'
+import monkey from './img/pexels-pixabay-38280.jpg'
 
 function App() {
     const createCards = () => {
@@ -19,16 +20,17 @@ function App() {
         ))
         return <div className="card-components">{cards}</div>
     }
-    const array = [0, 1, 2, 3]
-    const rating = [5.0, 5.0, 4.8, 3.2]
-    const price = [136, 125, 50, 99]
+    const array = [0, 1, 2, 3, 4]
+    const rating = [5.0, 5.0, 4.8, 3.2, 4.6]
+    const price = [136, 125, 50, 99, 39]
     const description = [
         'Life lessons with Katie Zaferes',
         'Learn Wedding Photography',
         'Group Mountain Biking',
         'Photoshoot at location',
+        'Go on a safari',
     ]
-    const image = [swimmer, weddingPhoto, biker, studioPhoto]
+    const image = [swimmer, weddingPhoto, biker, studioPhoto, monkey]
 
     return (
         <div className="App">

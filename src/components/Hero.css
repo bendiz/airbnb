@@ -1,5 +1,5 @@
 .Hero .main-image {
-    width: 70%;
+    width: 80%;
     display: block;
     margin: 2.6rem auto;
 }
@@ -7,6 +7,10 @@
 .Hero {
     font-family: 'Poppins', sans-serif;
     font-size: 3.6rem;
+}
+
+.Hero .description {
+    margin: 0 3.6rem;
 }
 
 .Hero .description > h1 {
