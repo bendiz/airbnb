@@ -1,34 +1,48 @@
+import React, { useEffect } from 'react'
 import './Card.css'
-import starIcon from '../img/star.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default function Card(props) {
+    let badgeText = undefined
+    if (props.openSpots === 0) {
+        badgeText = 'SOLD OUT'
+    } else if (props.location === 'Online') {
+        badgeText = 'ONLINE'
+    }
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
     return (
-        <section className="Card">
-            <div className="CardBody">
-                <figure>
+        <div className="CardBody " data-aos="fade-up">
+            <figure>
+                <img
+                    src={`/src/img/${props.coverImg}`}
+                    alt={props.description}
+                />
+                {badgeText && <span className="availability">{badgeText}</span>}
+            </figure>
+            <div className="information">
+                <div className="rating">
                     <img
-                        src={props.image}
-                        alt="An image of Katie Zaferes in her swimsuit with googles and a cap"
+                        src="/src/img/star.png"
+                        alt="A star icon"
+                        className="star-icon"
                     />
-                    <span className="availability">SOLD OUT</span>
-                </figure>
-                <div className="information">
-                    <div className="rating">
-                        <img
-                            src={starIcon}
-                            alt="A star icon"
-                            className="star-icon"
-                        />
-                        <p className="rating-text">
-                            {props.rating.toFixed(1)}
-                            <span className="grey"> (6) • USA</span>
-                        </p>
-                    </div>
-                    <p className="description">{props.description}</p>
-                    <p>
-                        <strong>From ${props.price}</strong> / person
+                    <p className="rating-text">
+                        {props.stats.rating}
+                        <span className="grey">
+                            {' '}
+                            ({props.stats.reviewCount}) • {props.location}
+                        </span>
                     </p>
                 </div>
+                <p className="description">{props.title}</p>
+                <p>
+                    <strong>From ${props.price}</strong> / person
+                </p>
             </div>
-        </section>
+        </div>
     )
 }

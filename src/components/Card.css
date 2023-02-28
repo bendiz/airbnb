@@ -1,25 +1,33 @@
 .Card {
     font-family: 'Poppins', sans-serif;
+    margin: 3.6rem 3.6rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 figure {
     position: relative;
     margin: 0;
 }
-
-.Card .CardBody figure > img {
-    object-fit: cover;
+.Card .CardBody {
     max-width: 300px;
     min-width: 176px;
+}
+
+img {
+    object-fit: cover;
+    max-height: 350px;
     border-radius: 9px;
 }
 
 .Card .CardBody .availability {
     line-height: 1.1;
     font-size: 1.1rem;
+    font-weight: 600;
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: #ffffff;
+    background: #ffffffac;
     color: #222222;
     padding: 0.5rem 0.6rem;
     border-radius: 2px;
