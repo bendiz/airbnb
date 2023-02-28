@@ -35,6 +35,7 @@
     .Hero {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
     }
 
@@ -43,7 +44,7 @@
     }
 
     .Hero .description {
-        margin-left: 0;
+        margin: 0;
     }
 }
 
