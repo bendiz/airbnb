@@ -1,10 +1,12 @@
 .Card {
     font-family: 'Poppins', sans-serif;
-    margin: 3.6rem 3.6rem;
     display: flex;
-    gap: 3rem;
+    flex: 0 0 auto;
+    gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 figure {
     position: relative;
     margin: 0;
@@ -15,7 +17,6 @@ figure {
 }
 
 img {
-    object-fit: cover;
     max-height: 350px;
     border-radius: 9px;
 }

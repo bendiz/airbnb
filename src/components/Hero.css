@@ -15,6 +15,7 @@
 }
 
 .Hero .description {
+    text-align: center;
     margin: 0 3.6rem;
 }
 
@@ -28,7 +29,7 @@
     color: #222222;
     font-weight: 300;
     font-size: 1.6rem;
-    width: 50%;
+    margin: 0 0 3rem 0;
 }
 
 @media screen and (max-width: 550px) {
